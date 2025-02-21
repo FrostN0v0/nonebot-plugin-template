@@ -3,6 +3,7 @@ name = "nonebot-plugin-example"
 version = "0.1.0"
 description = "你的插件描述"
 readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.10"
 dependencies = [
     "nonebot-plugin-alconna>=0.54.2",
@@ -11,6 +12,7 @@ dependencies = [
 
 [project.urls]
 homepage = "https://github.com/owner/nonebot-plugin-example"
+repository = "https://github.com/owner/nonebot-plugin-example"
 
 [project.optional-dependencies]
 dev = [
@@ -28,12 +30,6 @@ adapters = [
     { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
 ]
 
-[tool.black]
-line-length = 90
-target-version = ["py310", "py311", "py312"]
-include = '\.pyi?$'
-extend-exclude = '''
-'''
 
 [tool.isort]
 profile = "black"
